@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  
+<servlet>
+<servlet-name>user</servlet-name>
+<servlet-class>loginandlogout.login</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>user</servlet-name>
+<url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>number</servlet-name>
+<servlet-class>loginandlogout.add</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>number</servlet-name>
+<url-pattern>/add</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>logout</servlet-name>
+<servlet-class>loginandlogout.logout</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>logout</servlet-name>
+<url-pattern>/logout</url-pattern>
+</servlet-mapping>
+</web-app>
